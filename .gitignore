@@ -1,0 +1,22 @@
+# === Artefak build driver (src/) ===
+*.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+.*.cmd
+Module.symvers
+Module.markers
+modules.order
+.tmp_versions/
+
+# Backup metadata git upstream (shallow clone, untuk referensi diff)
+src/.git-backup/
+
+# === State editor/IDE ===
+.openidea/
+
+# === OS noise ===
+Thumbs.db
+Desktop.ini
+.DS_Store

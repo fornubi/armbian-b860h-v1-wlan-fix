@@ -1,0 +1,12 @@
+make: Entering directory '/home/bedman/Project/wifi_fix/src'
+make ARCH=arm64 CROSS_COMPILE= -C /lib/modules/6.18.59-ophub/build M=/home/bedman/Project/wifi_fix/src  modules
+make[1]: Entering directory '/usr/src/linux-headers-6.18.59-ophub'
+make[2]: Entering directory '/home/bedman/Project/wifi_fix/src'
+warning: the compiler differs from the one used to build the kernel
+  The kernel was built by: aarch64-none-linux-gnu-gcc (Arm GNU Toolchain 15.3.Rel1 (Build arm-15.149)) 15.3.1 20260627
+  You are using:           gcc (Ubuntu 15.2.0-16ubuntu1) 15.2.0
+  CC [M]  core/rtw_cmd.o
+  CC [M]  core/rtw_security.o
+core/rtw_security.c:2854:5: warning: no previous prototype for ‘omac1_aes_128’ [-Wmissing-prototypes]
+ 2854 | int omac1_aes_128(const u8 *key, const u8 *data, size_t data_len, u8 *mac)
+      |     ^~~~~~~~~~~~~
