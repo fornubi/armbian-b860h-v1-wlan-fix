@@ -1,2 +1,4 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+# Repo ini ditujukan untuk Linux (armbian): checkout selalu pakai LF,
+# apa pun setelan core.autocrlf di mesin lokal.
+* text=auto eol=lf
